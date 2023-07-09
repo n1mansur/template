@@ -1,0 +1,30 @@
+@import '@/styles/mixins';
+
+:root {
+	--primary-color: #51267d;
+	--secondary-color: #fdc100;
+	--text-color: #696969;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Lexend', 'Roboto', sans-serif !important;
+	box-sizing: border-box;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.crosshairs {
+	&::before,
+	&::after {
+		background: #fff !important;
+	}
+}

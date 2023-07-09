@@ -1,0 +1,74 @@
+@import '@/styles/breakpoints';
+.footer {
+	padding: 80px 0;
+	@include breakpoint('md') {
+		padding: 40px 0;
+	}
+	.section {
+		display: flex;
+		gap: 20px;
+
+		@include breakpoint('lg') {
+			flex-direction: column;
+		}
+
+		.column {
+			flex: 1;
+
+			&:last-of-type {
+				min-width: 450px;
+			}
+		}
+
+		.subscribe {
+			@include breakpoint('md') {
+				display: none;
+			}
+		}
+
+		.logo {
+			margin-bottom: 25px;
+		}
+
+		.description {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 28px;
+			color: #757095;
+			margin-bottom: 25px;
+		}
+
+		.columnTitle {
+			font-weight: 500;
+			font-size: 21px;
+			line-height: 24px;
+			margin-bottom: 24px;
+		}
+
+		.link {
+			font-size: 16px;
+			line-height: 24px;
+			margin-bottom: 12px;
+			transition-duration: 0.3s;
+			cursor: pointer;
+
+			&:hover {
+				color: #de2329;
+			}
+		}
+
+		.input {
+			background-color: #f9f9f9;
+			height: 52px;
+			flex: 1;
+			border-radius: 4px 0 0 4px;
+			margin-bottom: 20px;
+		}
+
+		.button {
+			height: 52px;
+			min-width: 170px;
+			border-radius: 0 4px 4px 0;
+		}
+	}
+}
